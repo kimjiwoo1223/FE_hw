@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'ChosunGu';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-weight: 500%;
+    font-style: normal;
+}
+
 * {
+    font-family: 'ChosunGu';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,12 +19,6 @@ html, body {
     overflow-x: hidden;
 }
 
-.wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 section {
     width: 100%;
     max-width: 1200px;
@@ -25,7 +27,6 @@ section {
 }
 
 body {
-    font-family: "Boldonse", system-ui;
     font-weight: 400;
     font-style: normal;
     background-color: #e0e7e9;
@@ -73,6 +74,8 @@ body {
 
 
 #Introduce-box img {
+    width:500px; 
+    height:550px;
     max-width: 280px;
     height: auto;
     border-radius: 10px;
@@ -147,4 +150,18 @@ footer {
     text-align: center;
     padding: 15px 0;
     margin-top: auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+
+}
+footer img{
+    border-radius: 50%;
+    width:25px;
+    height:auto;
+    object-fit:cover;
+    padding:1px;
+    
+
 }
