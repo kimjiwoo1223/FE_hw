@@ -1,0 +1,290 @@
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 네비게이션 바 */
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+.nav{
+    padding:0px 0px 0px 30px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    
+}
+
+.nav-container img {
+    height: 59px;
+    width: 260px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+.nav-menu li{
+    width: 107.4px; 
+    height: 80px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap; /* 한 줄 유지 */
+    transition: background 0.3s ease;
+}
+
+/* hover 시 색 변경 */
+.nav-menu li a:hover {
+    color: #800020;
+}
+
+
+/* 햄버거 메뉴 */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger img {
+    width: 30px;
+    height: 30px;
+}
+
+/* 검색창 및 배경 이미지 */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-container img:first-child {
+    width: 100%;
+}
+
+.search-container img:last-child {
+    position: absolute;
+    display:flex;
+    justify-content: space-around;;
+    width: 40%;
+    top: 25%;
+}
+
+/* 주요 서비스 */
+.services {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 190.8px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #cccccc;  
+    padding:0 10% 0 10%;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.service-item img {
+    padding:0;
+
+}
+.service-item p {
+    font-size: 14.4px;
+    font-weight: bold;
+}
+
+/* .container{
+    width: 100%;
+    display: flex;
+    margin:3% 10% 0 10%;
+}
+
+
+.notice-title span{
+    color: #e888a5;
+    font-size: 27.2px;
+    font-weight: bold;
+
+}
+.sub-title{
+    color: #999;
+    font-size: 13.6px;
+    letter-spacing: 1px;
+    font-weight: bold;
+
+}
+.category span {
+    color: #a0a0a0;
+    font-size: 22.4px;
+}
+.sub-category{
+    color: #999999;
+    font-size: 11.2px;
+} */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3% 0 10% 0;
+    /* margin: 3% 10% 0 10%; */
+}
+.container > section {
+    width: 40%;
+}
+.notice-section{
+    margin-right: 40px;
+
+}
+
+.notice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+.notice-title {
+    font-size: 27.2px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.notice-title .highlight {
+    color: #e888a5;
+}
+
+.notice-title .sub-title {
+    color: #999;
+    font-size: 13.6px;
+    font-weight: bold;
+}
+
+.category {
+    font-size: 22.4px;
+    color: #333;
+}
+
+.category .culture {
+    color: #a0a0a0;
+    margin-left: 15px;
+}
+
+.category .sub-category {
+    color: #999999;
+    font-size: 11.2px;
+    margin-left: 5px;
+}
+
+.more-btn {
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+}
+
+.notice-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.notice-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.notice-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.notice-list .date {
+    font-size: 14px;
+    color: #999;
+}
+.notice-banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+#scrollTop img{
+    position: fixed;
+    left: 90%;
+    bottom: 30px;
+    z-index: 9990;
+    display: block;
+    width: 62px;
+    height: 67px;
+}
+
+/* 반응형 (화면 너비 990px 이하) */
+@media (max-width: 990px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .services {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .notice-section {
+        width: 90%; /* 화면이 작아질 때 너비 조정 */
+    }
+}
