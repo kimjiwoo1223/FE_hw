@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 704px;
+    padding: 48px 24px;
+}
+.login-container > img{
+    width: 200px;
+    height: auto;
+    margin-bottom: 40px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.username, .password{
+    padding: 10px;
+    margin-bottom: 4px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+
+.submitBtn {
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background-color: #737373;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.submitBtn.active {
+    background-color:  #F91F15;
+    cursor: pointer;
+}
+
+.signup-link {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #737373;
+    text-decoration-line: underline;
+}
+
+footer {
+    display: flex;
+    margin-top: 96px;
+    width: 100%;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer a{
+    color: #737373;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+@media(max-width:640px){
+    .login-container {
+        top: 50%;
+        left: 50%;
+        width: 360px; 
+    }
+
+    .login-container > img {
+        width: 210px;
+        margin-bottom: 40px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        padding: 10px;
+        font-size: 16px;
+        height: 24px;
+        margin-top: 4px;
+        border-radius: 12px;
+    }
+
+    input[type="submit"] {
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 4px;
+        border-radius: 12px;
+        height: 44px;
+    }
+
+    .signup-link {
+        font-size: 14px;
+        margin-top: 80px;
+    }
+
+    footer {
+        gap: 16px;
+        margin-top: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer a {
+        font-size: 12px;
+    }
+}
