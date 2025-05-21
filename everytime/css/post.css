@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Apple SD Gothic Neo", "맑은 고딕", "돋움", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.container {
+    width: 800px;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-box {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.title-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    background: transparent;
+}
+
+.content-box {
+    width: 100%;
+    height: 380px;
+    border: 1px solid #ccc;
+}
+
+.content-input {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    resize: none;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.options-submit{
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    margin-top: 10px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.tooltip-container img{
+    width: 40px;
+    height: auto;
+}
+.tooltip-container:hover .tooltip {
+    display: block;
+}
+
+.hashtag-icon,
+.attach-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.file-input {
+    display: none;
+}
+
+.checkbox-and-submit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* margin-top: 10px; */
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.checkbox-group label {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.submit-comment {
+    /* background-color: #ff4500;
+    color: white;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 40px; */
+    background-color: #ff4500;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: flex;          
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-comment > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-comment img {
+    width: 40px;
+    height: auto;
+}
+
+.styled-list-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid red;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 0 10px 0 10px;  
+    height: 35px;
+    line-height: 35px;
+}
+
+.styled-list-button span {    
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+.styled-list-button:hover {
+    background-color: #ffe5e5;
+    cursor: pointer;
+}
+
+.styled-list-button img {
+    width: 40px;  
+    height: auto;
+    margin-left: 0; 
+}
+
+.list-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.tooltip-container {
+    display: inline-block;
+    position: relative;
+}
+
+.tooltip-container:hover .tooltip {
+    display: block;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    white-space: nowrap;
+    font-size: 12px;
+}
+/* 
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #e63e00;
+} */
